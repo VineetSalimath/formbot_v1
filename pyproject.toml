@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvformfiller"
+version = "0.1.0"
+description = "Fill Microsoft Forms from CSV data using explicit question mappings."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Vineet Salimath"}
+]
+dependencies = [
+  "selenium>=4.20",
+  "PyYAML>=6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[project.scripts]
+csvformfiller = "csvformfiller.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["csvformfiller*"]
