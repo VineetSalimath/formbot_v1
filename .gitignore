@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+submission_log.csv
+screenshots/
+last_page.html
+last_page.txt
+*.xlsx
+.DS_Store
