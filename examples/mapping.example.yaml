@@ -1,0 +1,41 @@
+# Match CSV columns to specific questions.
+# "question" is a unique phrase contained in the visible question text.
+
+fields:
+  - column: age
+    question: "What is your age group?"
+    type: radio
+
+  - column: browse_frequency
+    question: "How often do you browse online for products or services?"
+    type: radio
+
+  - column: purchase_frequency
+    question: "How often do you make purchases online?"
+    type: radio
+
+  - column: products
+    question: "Which types of products do you usually buy or browse online?"
+    type: checkbox
+    separator: ";"
+
+  - column: country
+    question: "Which country do you currently reside in?"
+    type: text
+
+# Matrices are mapped by visible row order.
+# The CSV answer must exactly match one item in options (case-insensitive).
+matrices:
+  - name: digital_habits
+    question: "Digital Habits"
+    columns:
+      - habit_1
+      - habit_2
+      - habit_3
+      - habit_4
+    options:
+      - Strongly Disagree
+      - Disagree
+      - Neutral
+      - Agree
+      - Strongly Agree
