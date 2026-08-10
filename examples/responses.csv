@@ -1,0 +1,3 @@
+id,age,browse_frequency,purchase_frequency,products,country,habit_1,habit_2,habit_3,habit_4
+DEMO-001,22-25,Once a day,A few times a month,Clothing;Electronics,United Kingdom,Agree,Neutral,Agree,Strongly Agree
+DEMO-002,26-34,A few times a week,About once a month,Books or stationery;Travel,India,Neutral,Agree,Neutral,Agree
